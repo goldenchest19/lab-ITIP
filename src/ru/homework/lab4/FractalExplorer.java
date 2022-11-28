@@ -6,7 +6,7 @@ import java.awt.event.*;
 import java.awt.geom.Rectangle2D;
 
 public class FractalExplorer {
-    // размер экрана, является шириной и высотой для состояния программ
+    // размер экрана, является шириной и высотой для состояния программм
     private int size;
 //    данная ссылка необходима для обновления отображения в разных методах в процессе вычисления фракатала
     private JImageDisplay jImageDisplay;

@@ -6,7 +6,7 @@ public class Mandelbrot extends FractalGenerator{
     public static final int MAX_ITERATIONS = 2000;
 
 //   данный метод позволяет генератору фракталов определить наиболее "интересную" область
-//   комплексной плоскости для конкретного фрактала
+//   комплексной плоскости для конкретного фракталаa
     @Override
     public void getInitialRange(Rectangle2D.Double range) {
         range.x = -2;

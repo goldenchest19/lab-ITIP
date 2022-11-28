@@ -1,6 +1,4 @@
-package com.kirill;
-
-import com.kirill.Point2d;
+package ru.homework.lab2;
 
 public class Point2dExample {
 

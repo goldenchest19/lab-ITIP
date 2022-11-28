@@ -86,10 +86,10 @@ public class AStarState {
      * Returns the current number of open waypoints.
      **/
     public int numOpenWaypoints() {
-//        Set<Map.Entry<Location, Waypoint>> set = openWaypoint.entrySet();
-//        int num = set.size();
-
-        return openWaypoint.size();
+        Set<Map.Entry<Location, Waypoint>> set = openWaypoint.entrySet();
+        int num = set.size();
+        return num;
+//        return openWaypoint.size();
     }
 
 

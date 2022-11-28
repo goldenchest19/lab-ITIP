@@ -1,4 +1,4 @@
-package com.kirill;
+package ru.homework.lab2;
 
 public class Point2d {
 
