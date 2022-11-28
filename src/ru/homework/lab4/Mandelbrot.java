@@ -3,6 +3,7 @@ package ru.homework.lab4;
 import java.awt.geom.Rectangle2D;
 
 public class Mandelbrot extends FractalGenerator{
+    // специальное число, ибо если доходит до него значит точка находится в наборе
     public static final int MAX_ITERATIONS = 2000;
 
 //   данный метод позволяет генератору фракталов определить наиболее "интересную" область
@@ -15,12 +16,14 @@ public class Mandelbrot extends FractalGenerator{
         range.height = 3;
     }
 
+    // реализует итеративную функцию для фрактала Мандельброта
     @Override
     public int numIterations(double x, double y) {
         int iteration = 0;
 
-
+        // для действительной части
         double z_real = 0;
+        // для мнимой части
         double z_imaginary = 0;
 
         while (iteration < MAX_ITERATIONS && z_real * z_real + z_imaginary * z_imaginary < 4)
@@ -32,7 +35,7 @@ public class Mandelbrot extends FractalGenerator{
             iteration += 1;
         }
 
-
+        // если алгоритм дошел до MAX_ITERATIONS
         if (iteration == MAX_ITERATIONS)
         {
             return -1;
