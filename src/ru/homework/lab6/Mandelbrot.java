@@ -1,8 +1,9 @@
-package ru.homework.lab4;
+package ru.homework.lab6;
+
 
 import java.awt.geom.Rectangle2D;
 
-public class Mandelbrot extends FractalGenerator{
+public class Mandelbrot extends FractalGenerator {
     // специальное число, ибо если доходит до него значит точка находится в наборе
     public static final int MAX_ITERATIONS = 2000;
 
